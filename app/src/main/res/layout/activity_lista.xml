@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lista"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ListaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6AC7D2"
+            android:gravity="center"
+            android:paddingTop="100dp"
+            android:text="Lista de Obras"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/btn_voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:text="Voltar"
+            android:textColor="@color/white"
+            android:textSize="13sp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_lista"
+            android:layout_marginTop="10dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#48929C"
+            app:cardBackgroundColor="#B5F6FF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="8dp"
+                android:text="NOME:\nTIPO:\nVALOR:\nLOCAL:\nINÍCIO:\nTÉRMINO:"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="8dp"
+                android:textAlignment="viewEnd"
+                android:text="Escola São Bernardo\nConstrução\nR$ 3.000.000\nAv. São José, 75\n20/02/2025\n10/12/2025"
+                android:textColor="@color/black"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card2"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card1"
+            android:layout_marginTop="10dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#48929C"
+            app:cardBackgroundColor="#B5F6FF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="8dp"
+                android:text="NOME:\nTIPO:\nVALOR:\nLOCAL:\nINÍCIO:\nTÉRMINO:"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="8dp"
+                android:textAlignment="viewEnd"
+                android:text="Conjunto Habitacional\nConstrução\nR$ 8.000.000\nBairro do Rio Grande\n10/01/2025\n02/12/2025"
+                android:textColor="@color/black"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card3"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card2"
+            android:layout_marginTop="10dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#48929C"
+            app:cardBackgroundColor="#B5F6FF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="8dp"
+                android:text="NOME:\nTIPO:\nVALOR:\nLOCAL:\nINÍCIO:\nTÉRMINO:"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="8dp"
+                android:textAlignment="viewEnd"
+                android:text="Creche Fonseca Junior\nConstrução\nR$ 2.700.000\nRua Maria José\n15/06/2025\n10/03/2026"
+                android:textColor="@color/black"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card4"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card3"
+            android:layout_marginTop="10dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#48929C"
+            app:cardBackgroundColor="#B5F6FF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="8dp"
+                android:text="NOME:\nTIPO:\nVALOR:\nLOCAL:\nINÍCIO:\nTÉRMINO:"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="8dp"
+                android:textAlignment="viewEnd"
+                android:text="Hospital Santa Maria\nReforma\nR$ 1.000.000\nAv. 1 de Janeiro\n20/05/2025\n10/07/2025"
+                android:textColor="@color/black"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card5"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card4"
+            android:layout_marginTop="10dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#48929C"
+            app:cardBackgroundColor="#B5F6FF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="8dp"
+                android:text="NOME:\nTIPO:\nVALOR:\nLOCAL:\nINÍCIO:\nTÉRMINO:"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="8dp"
+                android:textAlignment="viewEnd"
+                android:text="Estrada Rural\nConstrução\nR$ 300.000\nSaída da BR-103, Km 5\n03/02/2025\n25/02/2025"
+                android:textColor="@color/black"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card6"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card5"
+            android:layout_marginTop="10dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#48929C"
+            app:cardBackgroundColor="#B5F6FF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="8dp"
+                android:text="NOME:\nTIPO:\nVALOR:\nLOCAL:\nINÍCIO:\nTÉRMINO:"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="8dp"
+                android:textAlignment="viewEnd"
+                android:text="Unidade de Saúde\nConstrução\nR$ 4.200.000\nAv. Principal, 147\n20/04/2025\n10/01/2026"
+                android:textColor="@color/black"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card7"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card6"
+            android:layout_marginTop="10dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#48929C"
+            app:cardBackgroundColor="#B5F6FF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="8dp"
+                android:text="NOME:\nTIPO:\nVALOR:\nLOCAL:\nINÍCIO:\nTÉRMINO:"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="8dp"
+                android:textAlignment="viewEnd"
+                android:text="Escola Professor Benedito\nReforma\nR$ 750.000\nRua Toledo Bastos\n12/04/2025\n30/04/2025"
+                android:textColor="@color/black"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card8"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card7"
+            android:layout_marginTop="10dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#48929C"
+            app:cardBackgroundColor="#B5F6FF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="8dp"
+                android:text="NOME:\nTIPO:\nVALOR:\nLOCAL:\nINÍCIO:\nTÉRMINO:"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="8dp"
+                android:textAlignment="viewEnd"
+                android:text="BR-103\nReparos\nR$ 1.000.000\nBR-103 Km 25\n15/07/2025\n10/08/2025"
+                android:textColor="@color/black"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
